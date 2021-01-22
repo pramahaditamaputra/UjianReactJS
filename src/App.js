@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ListSoal from "./ListSoal";
 
-function App() {
+const App = () => {
   const [datas, setDatas] = useState([
     {
       id: 1,
@@ -35,6 +35,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;
