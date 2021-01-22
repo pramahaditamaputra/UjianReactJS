@@ -1,8 +1,14 @@
-const Jawaban = ({ tipe, pilihan, stateCheck }) => {
+const Jawaban = ({ nama, tipeJawaban, optionJawaban }) => {
   return (
     <div>
-      <input className="mr-5" name="radio" type={tipe} checked={stateCheck} />
-      <span>{pilihan}</span>
+      {optionJawaban.map((option, index) => {
+        return (
+          <div key={index}>
+            <input type={tipeJawaban} name={nama} />
+            <span>{option}</span>
+          </div>
+        );
+      })}
     </div>
   );
 };
