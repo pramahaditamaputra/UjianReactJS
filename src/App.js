@@ -27,8 +27,12 @@ function App() {
   ]);
 
   return (
-    <div className="App">
-      <ListSoal datas={datas} />
+    <div className="container">
+      <div className="row">
+        <div className="col">
+          <ListSoal datas={datas} />
+        </div>
+      </div>
     </div>
   );
 }

@@ -6,6 +6,7 @@ const Soal = ({ datas }) => {
       {datas.map((data) => {
         return (
           <div key={data.id}>
+            <span>{data.id}. </span>
             <label className="form-label">{data.soal}</label>
             <Jawaban
               nama={data.id}

@@ -5,7 +5,7 @@ const Jawaban = ({ nama, tipeJawaban, optionJawaban }) => {
         return (
           <div key={index}>
             <input type={tipeJawaban} name={nama} />
-            <span>{option}</span>
+            <span> {option}</span>
           </div>
         );
       })}
