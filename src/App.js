@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ListSoal from "./ListSoal";
+import FormMultiple from "./FormMultiple";
 
 const App = () => {
   const [datas, setDatas] = useState([
@@ -26,11 +26,21 @@ const App = () => {
     },
   ]);
 
+  let [soalPertama] = [...datas];
+  let [, soalKedua] = [...datas];
+  let [, , soalKetiga] = [...datas];
+
   return (
     <div className="container">
       <div className="row">
         <div className="col">
-          <ListSoal datas={datas} />
+          <div className="card p-5 mt-5">
+            <FormMultiple
+              soalPertama={soalPertama}
+              soalKedua={soalKedua}
+              soalKetiga={soalKetiga}
+            />
+          </div>
         </div>
       </div>
     </div>
