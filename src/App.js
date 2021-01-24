@@ -26,19 +26,12 @@ const App = () => {
     },
   ]);
 
-  let [soalPertama, soalKedua, soalKetiga] = [...datas];
-
   return (
     <div className="container">
       <div className="row">
         <div className="col">
           <div className="card p-5 mt-5">
-            <FormMultiple
-              soalPertama={soalPertama}
-              soalKedua={soalKedua}
-              soalKetiga={soalKetiga}
-              soalCollection={datas}
-            />
+            <FormMultiple soalCollection={datas} />
           </div>
         </div>
       </div>
