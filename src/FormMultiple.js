@@ -20,7 +20,11 @@ const FormMultiple = (props) => {
                     id={soal.id}
                     optionType={soal.type}
                     optionName={nameOption}
-                    optionAnwer={soal.jawaban[index]}
+                    optionAnwer={
+                      typeof soal.jawaban === "string"
+                        ? soal.jawaban
+                        : soal.jawaban[index]
+                    }
                   />
                 );
               })}

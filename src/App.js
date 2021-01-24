@@ -8,21 +8,21 @@ const App = () => {
       type: "radio",
       soal: "Siapakah Penemu Baling - Baling Bambu",
       option: ["Doraemon", "Suneo", "Nobita", "Naruto"],
-      jawaban: ["Doraemon", "", "", ""],
+      jawaban: "Doraemon",
     },
     {
       id: 2,
       type: "checkbox",
       soal: "Pilihlah 3 yang benar mengenai aqil",
       option: ["Trainer Juara Coding", "Manusia", "Anggota Avenger"],
-      jawaban: ["Trainer Juara Coding", "Manusia", ""],
+      jawaban: ["Trainer Juara Coding", "", "Anggota Avenger"],
     },
     {
       id: 3,
       type: "text",
       soal: "Ceritakan Pengalaman Anda Ketika Sedang Tidur",
       option: [""],
-      jawaban: [""],
+      jawaban: "",
     },
   ]);
 
