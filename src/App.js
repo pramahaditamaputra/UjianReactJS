@@ -14,8 +14,8 @@ const App = () => {
       id: 2,
       type: "checkbox",
       soal: "Pilihlah 3 yang benar mengenai aqil",
-      option: ["Trainer Juara Coding", "Manusia", "Anggota Avenger"],
-      jawaban: ["Trainer Juara Coding", "Manusia"],
+      option: ["TrainerJuaraCoding", "Manusia", "Anggota Avenger"],
+      jawaban: ["TrainerJuaraCoding", "Manusia"],
     },
     {
       id: 3,

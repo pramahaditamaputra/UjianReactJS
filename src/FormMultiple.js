@@ -21,13 +21,13 @@ const FormMultiple = (props) => {
         </div>
         <div className="form-group">
           <LabelSoal labelName={props.soalKedua.soal} />
-          {props.soalKedua.option.map((nameOption) => {
+          {props.soalKedua.option.map((nameOption, index) => {
             return (
               <InputJawaban
                 key={nameOption}
                 optionType={props.soalKedua.type}
                 optionName={nameOption}
-                optionAnwer={props.soalKedua.jawaban}
+                optionAnwer={props.soalKedua.jawaban[index]}
               />
             );
           })}
