@@ -8,14 +8,14 @@ const App = () => {
       type: "radio",
       soal: "Siapakah Penemu Baling - Baling Bambu",
       option: ["doraemon", "suneo", "nobita", "naruto"],
-      jawaban: ["doraemon"],
+      jawaban: ["doraemon", "", "", ""],
     },
     {
       id: 2,
       type: "checkbox",
       soal: "Pilihlah 3 yang benar mengenai aqil",
-      option: ["TrainerJuaraCoding", "Manusia", "Anggota Avenger"],
-      jawaban: ["TrainerJuaraCoding", "Manusia"],
+      option: ["Trainer Juara Coding", "Manusia", "Anggota Avenger"],
+      jawaban: ["Trainer Juara Coding", "Manusia", ""],
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const App = () => {
     <div className="container">
       <div className="row">
         <div className="col">
-          <div className="card p-5 mt-5">
+          <div className="card p-5 mt-5 mb-5">
             <FormMultiple soalCollection={datas} />
           </div>
         </div>

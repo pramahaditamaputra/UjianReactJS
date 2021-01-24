@@ -5,7 +5,7 @@ const InputJawaban = (props) => {
         type={props.optionType}
         name={props.id}
         defaultValue={props.optionName}
-        defaultChecked={props.optionName === props.optionAnwer}
+        defaultChecked={props.optionName === props.optionAnwer ? true : false}
       />{" "}
       {props.optionName}
     </div>
