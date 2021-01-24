@@ -5,46 +5,24 @@ const FormMultiple = (props) => {
   return (
     <div>
       <form action="">
-        <div className="form-group">
-          <LabelSoal labelName={props.soalPertama.soal} />
-          {props.soalPertama.option.map((nameOption, index) => {
-            return (
-              <InputJawaban
-                key={nameOption}
-                id={props.soalPertama.id}
-                optionType={props.soalPertama.type}
-                optionName={nameOption}
-                optionAnwer={props.soalPertama.jawaban[index]}
-              />
-            );
-          })}
-        </div>
-        <div className="form-group">
-          <LabelSoal labelName={props.soalKedua.soal} />
-          {props.soalKedua.option.map((nameOption, index) => {
-            return (
-              <InputJawaban
-                key={nameOption}
-                optionType={props.soalKedua.type}
-                optionName={nameOption}
-                optionAnwer={props.soalKedua.jawaban[index]}
-              />
-            );
-          })}
-        </div>
-        <div className="form-group">
-          <LabelSoal labelName={props.soalKetiga.soal} />
-          {props.soalKetiga.option.map((nameOption, index) => {
-            return (
-              <InputJawaban
-                key={nameOption}
-                optionType={props.soalKetiga.type}
-                optionName={nameOption}
-                optionAnwer={props.soalKedua.jawaban[index]}
-              />
-            );
-          })}
-        </div>
+        {props.soalCollection.map((soal, index) => {
+          return (
+            <div className="form-group">
+              <LabelSoal labelName={soal.soal} />
+              {soal.option.map((nameOption, index) => {
+                return (
+                  <InputJawaban
+                    key={nameOption}
+                    id={soal.id}
+                    optionType={soal.type}
+                    optionName={nameOption}
+                    optionAnwer={soal.jawaban[index]}
+                  />
+                );
+              })}
+            </div>
+          );
+        })}
       </form>
     </div>
   );

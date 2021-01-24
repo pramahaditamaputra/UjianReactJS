@@ -26,9 +26,7 @@ const App = () => {
     },
   ]);
 
-  let [soalPertama] = [...datas];
-  let [, soalKedua] = [...datas];
-  let [, , soalKetiga] = [...datas];
+  let [soalPertama, soalKedua, soalKetiga] = [...datas];
 
   return (
     <div className="container">
@@ -39,6 +37,7 @@ const App = () => {
               soalPertama={soalPertama}
               soalKedua={soalKedua}
               soalKetiga={soalKetiga}
+              soalCollection={datas}
             />
           </div>
         </div>
