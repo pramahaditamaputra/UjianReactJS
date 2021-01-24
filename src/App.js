@@ -7,8 +7,8 @@ const App = () => {
       id: 1,
       type: "radio",
       soal: "Siapakah Penemu Baling - Baling Bambu",
-      option: ["doraemon", "suneo", "nobita", "naruto"],
-      jawaban: ["doraemon", "", "", ""],
+      option: ["Doraemon", "Suneo", "Nobita", "Naruto"],
+      jawaban: ["Doraemon", "", "", ""],
     },
     {
       id: 2,

@@ -7,23 +7,30 @@ const FormMultiple = (props) => {
       <form action="">
         {props.soalCollection.map((soal) => {
           return (
-            <div className="form-group" key={soal.id}>
-              <LabelSoal labelId={soal.id} labelName={soal.soal} />
-              {soal.option.map((nameOption, index) => {
-                return (
-                  <InputJawaban
-                    key={nameOption}
-                    id={soal.id}
-                    optionType={soal.type}
-                    optionName={nameOption}
-                    optionAnwer={soal.jawaban[index]}
-                  />
-                );
-              })}
+            <>
+              <div className="form-group" key={soal.id}>
+                <LabelSoal labelId={soal.id} labelName={soal.soal} />
+                {soal.option.map((nameOption, index) => {
+                  return (
+                    <InputJawaban
+                      key={nameOption}
+                      id={soal.id}
+                      optionType={soal.type}
+                      optionName={nameOption}
+                      optionAnwer={soal.jawaban[index]}
+                    />
+                  );
+                })}
+              </div>
               <br />
-            </div>
+            </>
           );
         })}
+        <input
+          type="submit"
+          className="btn btn-sm btn-primary"
+          value="Kirim Jawaban"
+        />
       </form>
     </div>
   );
