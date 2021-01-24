@@ -8,7 +8,7 @@ const FormMultiple = (props) => {
         {props.soalCollection.map((soal, index) => {
           return (
             <div className="form-group">
-              <LabelSoal labelName={soal.soal} />
+              <LabelSoal labelId={soal.id} labelName={soal.soal} />
               {soal.option.map((nameOption, index) => {
                 return (
                   <InputJawaban

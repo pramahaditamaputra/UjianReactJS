@@ -1,7 +1,9 @@
 const LabelSoal = (props) => {
   return (
     <div>
-      <label htmlFor="">{props.labelName}</label>
+      <label htmlFor="">
+        {props.labelId} {". "} {props.labelName}
+      </label>
     </div>
   );
 };
