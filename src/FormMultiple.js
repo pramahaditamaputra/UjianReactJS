@@ -7,14 +7,14 @@ const FormMultiple = (props) => {
       <form action="">
         <div className="form-group">
           <LabelSoal labelName={props.soalPertama.soal} />
-          {props.soalPertama.option.map((nameOption) => {
+          {props.soalPertama.option.map((nameOption, index) => {
             return (
               <InputJawaban
                 key={nameOption}
                 id={props.soalPertama.id}
                 optionType={props.soalPertama.type}
                 optionName={nameOption}
-                optionAnwer={props.soalPertama.jawaban}
+                optionAnwer={props.soalPertama.jawaban[index]}
               />
             );
           })}
@@ -34,12 +34,13 @@ const FormMultiple = (props) => {
         </div>
         <div className="form-group">
           <LabelSoal labelName={props.soalKetiga.soal} />
-          {props.soalKetiga.option.map((nameOption) => {
+          {props.soalKetiga.option.map((nameOption, index) => {
             return (
               <InputJawaban
                 key={nameOption}
                 optionType={props.soalKetiga.type}
                 optionName={nameOption}
+                optionAnwer={props.soalKedua.jawaban[index]}
               />
             );
           })}

@@ -8,7 +8,7 @@ const App = () => {
       type: "radio",
       soal: "Siapakah Penemu Baling - Baling Bambu",
       option: ["doraemon", "suneo", "nobita", "naruto"],
-      jawaban: "doraemon",
+      jawaban: ["doraemon"],
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ const App = () => {
       type: "text",
       soal: "Ceritakan Pengalaman Anda Ketika Sedang Tidur",
       option: [""],
-      jawaban: "",
+      jawaban: [""],
     },
   ]);
 
